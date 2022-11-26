@@ -20,7 +20,7 @@
                 }
                 }
                 stage('CodeReview'){
-                    agent any
+                        agent {'mysonarscanner'}
                     steps{
                     
                 echo 'codeReview...'
